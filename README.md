@@ -26,7 +26,7 @@ This program contains multiple exercises from various papers. A user has the cho
 `Dad Jokes API` by `Kegen Guyll`
 
 ## Live Demo Video
-The video demonstration of this application is live [here]('https://www.loom.com/share/96bc36a900684197848ee552ba69db62?sid=43c50ac6-afad-4197-b544-b3473d1478ac')
+The video demonstration of this application is live [here](https://www.loom.com/share/96bc36a900684197848ee552ba69db62?sid=43c50ac6-afad-4197-b544-b3473d1478ac)
 
 ## Try it Out
-Try the application on this link [JourneyToExpertise]('https://gasanadj.github.io/API_assignment/')
+Try the application on this link [JourneyToExpertise](https://gasanadj.github.io/API_assignment/)
