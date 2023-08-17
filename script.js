@@ -5,8 +5,8 @@ const myDiv = document.getElementById('result');
 const options = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Key': 'c2061c6ed8mshf5a80186e532224p12502fjsn4c1473b899c6',
-    'X-RapidAPI-Host': 'dad-jokes.p.rapidapi.com'
+    'X-RapidAPI-Key': '1abf1fadebmshd1c274b10f43a0dp1cc5b0jsnd8f460f5e008',
+    'X-RapidAPI-Host': 'tech-exams.p.rapidapi.com'
   },
   mode: 'cors'
 };
@@ -134,7 +134,7 @@ const AllQuestions = (data) => {
 
 const getQuestionsByExam = (data) => {
   jokes.setAttribute('disabled', 'disabled');
-    let questionNo
+    let questionNo = 1
     for (let i = 0; i< data.length; i++) {
         const h3 = document.createElement('h3');
         const p = document.createElement('p');
@@ -159,7 +159,14 @@ const dadJokes = () => {
         baseUrl = `https://dad-jokes.p.rapidapi.com/random/joke/${selectedJoke}`;
       }
         try {
-          const result = await fetch(baseUrl, options)
+          const result = await fetch(baseUrl,{
+              method: 'GET',
+              headers: {
+                'X-RapidAPI-Key': '1abf1fadebmshd1c274b10f43a0dp1cc5b0jsnd8f460f5e008',
+                'X-RapidAPI-Host': 'dad-jokes.p.rapidapi.com'
+              },
+            mode: 'cors'
+          })
           const response = await result.json();
           const data = response.body;
           if (selectedJoke == 'joke') {
